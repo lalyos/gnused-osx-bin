@@ -2,6 +2,7 @@ os: osx
 language: go
 go:
     - 1.4
+      
 install:
     - github.com/progrium/gh-release
 script:
