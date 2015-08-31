@@ -1,5 +1,7 @@
 os: osx
 language: objective-c
+services:
+  - docker
 branches:
   only:
     - master
