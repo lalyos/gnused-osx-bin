@@ -1,10 +1,8 @@
 os: osx
-language: go
-go:
-    - 1.4
+language: objective-c
       
 install:
-    - go get github.com/progrium/gh-release
+    - curl -LO https://github.com/progrium/gh-release/releases/download/v2.2.0/gh-release_2.2.0_darwin_x86_64.tgz
 script:
     - brew install gnu-sed --default-names
 
