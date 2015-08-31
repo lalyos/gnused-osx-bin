@@ -1,7 +1,5 @@
 os: osx
 language: objective-c
-services:
-  - docker
 branches:
   only:
     - master
@@ -10,6 +8,5 @@ install:
 script:
     - brew install gnu-sed --default-names
     - mkdir -p release && tar -czvf release/sed-darwin-4.2.2.tgz  -C /usr/local/Cellar/gnu-sed/4.2.2/bin/ sed
-    - docker build -t sed . && docker run --rm -it sed > release/sed-linux-4.2.2.tgz
     - gh-release create lalyos/gnused-osx-bin 4.2.2
 
